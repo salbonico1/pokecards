@@ -43,7 +43,7 @@ const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
 const image = new Image();
-image.src = "./pokemon-cards/base set pack.png"; 
+image.src = "./pokemon-cards/base set (10).jpg"; 
 
 image.onload = () => {
     ctx.drawImage(image, 0, 0);
