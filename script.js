@@ -10,6 +10,12 @@ function randomNumber(min, max){
 
 function openPack(){
     // alert("card pack open");
+
+    let cardOpened = document.getElementById("pokemon-cards-opened");
+    while (cardsOpened.firstChild) {
+        cardsOpened.firstChild.remove();
+    }
+
     for (let i =0; i < 11; i++){
         let cardDiv = document.createElement("div");
         cardDiv.classList.add("pokemon-card");
