@@ -38,3 +38,9 @@ function openPack(){
         document.getElementById("pokemon-cards-opened").appendChild(cardDiv);
     }
 }
+
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+const image = new Image();
+image.src = './pokemon-cards/base set pack.png'; // Replace with the path to your image
