@@ -1,3 +1,4 @@
+/*
 window.onload = function() {
     var pack = document.getElementById("pokemon-pack");
     pack.addEventListener("click" , openPack);
@@ -37,8 +38,7 @@ function openPack(){
         cardDiv.appendChild(cardImg);
         document.getElementById("pokemon-cards-opened").appendChild(cardDiv);
     }
-}
-
+} */
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
