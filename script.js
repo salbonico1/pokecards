@@ -9,9 +9,9 @@ function randomNumber(min, max){
 
 
 function openPack(){
-    // alert("card pack open");
+    // alert("card pack open"); kennyyipcoding
 
-    let cardOpened = document.getElementById("pokemon-cards-opened");
+    let cardsOpened = document.getElementById("pokemon-cards-opened");
     while (cardsOpened.firstChild) {
         cardsOpened.firstChild.remove();
     }
