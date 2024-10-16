@@ -11,7 +11,8 @@ function randomNumber(min, max){
 
 function openPack(){
     // alert("card pack open"); kennyyipcoding
-    pack.classList.add('tear');
+    let pack1 = document.getElementById("pokemon-pack");
+    pack1.classList.add("tear");
     let cardsOpened = document.getElementById("pokemon-cards-opened");
     while (cardsOpened.firstChild) {
         cardsOpened.firstChild.remove();
