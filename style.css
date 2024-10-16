@@ -20,11 +20,11 @@ body {
     }
     20% {
       
-      transform: rotate(9deg);
+      transform: rotate(-9deg);
       opacity: 1;
     }
     70% {
-      transform: rotate(-9deg);
+      transform: rotate(9deg);
       opacity: 1;
     }
     100% {
