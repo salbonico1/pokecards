@@ -11,7 +11,7 @@ function randomNumber(min, max){
 
 function openPack(){
     // alert("card pack open"); kennyyipcoding
-
+    pack.classList.add('tear');
     let cardsOpened = document.getElementById("pokemon-cards-opened");
     while (cardsOpened.firstChild) {
         cardsOpened.firstChild.remove();
@@ -39,9 +39,5 @@ function openPack(){
         document.getElementById("pokemon-cards-opened").appendChild(cardDiv);
     }
 } 
-const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
 
-const image = new Image();
-image.src = "./pokemon-cards/base set (10).jpg"; 
 
