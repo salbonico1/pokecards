@@ -9,7 +9,7 @@ function randomNumber(min, max){
 }
 
 
-function openPack(){
+async function openPack(){
     // alert("card pack open"); kennyyipcoding
     let pack1 = document.getElementById("pokemon-pack");
     pack1.classList.add("tear");
@@ -17,8 +17,14 @@ function openPack(){
     while (cardsOpened.firstChild) {
         cardsOpened.firstChild.remove();
     }
+    setTimeout(() => {
+        
+        const divToRemove = document.getElementById("pokemon-pack").remove(); 
+      }, 500);
 
+    
     for (let i =0; i < 11; i++){
+        await new Promise(resolve => setTimeout(resolve, 600));
         let cardDiv = document.createElement("div");
         cardDiv.classList.add("pokemon-card");
 
@@ -37,8 +43,12 @@ function openPack(){
         cardImg.src = "./pokemon-cards/base set (" + num.toString() + ").jpg";
 
         cardDiv.appendChild(cardImg);
+        
         document.getElementById("pokemon-cards-opened").appendChild(cardDiv);
+        
     }
+   
+
 } 
 
 

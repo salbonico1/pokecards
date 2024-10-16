@@ -5,26 +5,30 @@ body {
 .pokemon-card img {
     width: 300px;
     height: 412px;
-    margin-top: 10px;
-    animation: appear-animation 1s linear forwards, float 6s 1s ease-in-out infinite;
+    
+    margin: 10px;
+    float: left;
+    animation: appear-animation 2000ms linear forwards, float 6s 2s ease-in-out infinite;
+    
 }
 
 @keyframes appear-animation {
     0% {
-      transform: rotate(0deg);
-      top: 0;
+      
+      
       opacity: 0;
     }
     20% {
+      
       transform: rotate(9deg);
-      top: 0;
-      opacity: 0;
+      opacity: 1;
     }
     70% {
+      transform: rotate(-9deg);
       opacity: 1;
     }
     100% {
-      top: 100px;
+      transform: rotate(0deg);
       opacity: 1;
     }
   }
@@ -68,5 +72,5 @@ body {
   }
 
   .tear {
-    animation: tear-animation .8s linear forwards;
+    animation: tear-animation .5s linear forwards;
   }
