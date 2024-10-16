@@ -43,3 +43,31 @@ body {
           transform: translatey(0px);
       }
   }
+
+  @keyframes tear-animation {
+    0% {
+      transform: rotate(0deg);
+      top: 0;
+      left: 10px:
+      opacity: 1;
+    }
+    20% {
+      transform: rotate(12deg);
+      top: 0px;
+      left: 20px;
+      opacity: 1;
+    } 
+    70% {
+      opacity: 1;
+      left:50px;
+    }
+    100% {
+      top: 100px;
+      left:100px;
+      opacity: 0;
+    }
+  }
+
+  .tear {
+    animation: tear-animation .8s linear forwards;
+  }
